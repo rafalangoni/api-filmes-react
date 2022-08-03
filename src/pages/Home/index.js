@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { api_key } from "../../APIKey"
 import { Container } from "../../componentes/Home/Container"
 import { Filme } from "../../componentes/Home/Filme"
 import { ListaFilmes } from "../../componentes/Home/ListaFilmes"
