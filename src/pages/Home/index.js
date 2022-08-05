@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 import { Container } from "../../componentes/Home/Container"
 import { Filme } from "../../componentes/Home/Filme"
 import { ListaFilmes } from "../../componentes/Home/ListaFilmes"
@@ -29,7 +30,7 @@ const Home = () => {
                 {movies.map(movie => {
                     return (
                     <Filme key={movie.id}>
-                        <a href="https://www.google.com.br"><img src={`${image_path}${movie.poster_path}`} alt={movie.title}></img></a>
+                        <Link to={`/details/${movie.id}`}><img src={`${image_path}${movie.poster_path}`} alt={movie.title}></img></Link>
                         <span>{movie.title}</span>
                     </Filme>
                     )
