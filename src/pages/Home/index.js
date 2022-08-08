@@ -15,7 +15,6 @@ const Home = () => {
             .then(response => response.json())
             .then(data => {
                 setMovies(data.results)
-                console.log(data.results)
             })
             .catch((error) => {
                 console.log(error.message);
