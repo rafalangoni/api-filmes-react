@@ -53,4 +53,14 @@ export const Container = styled.div`
         opacity: 0.5;
     }
 
+    @media screen and (min-width: 390px) {
+        .movie{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+    }
+
+    }
+
 `
